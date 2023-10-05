@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="216.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.InicioControlador">
+    <children>
+        <ImageView fitHeight="118.0" fitWidth="323.0" layoutX="147.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imagenes/inicio.png" />
+            </image>
+        </ImageView>
+        <Separator layoutX="-74.0" layoutY="105.0" prefHeight="4.0" prefWidth="716.0" />
+        <Button fx:id="btnRegistrarCliente" layoutX="242.0" layoutY="140.0" mnemonicParsing="false" onAction="#registrarCliente" prefHeight="29.0" prefWidth="170.0" text="REGISTRAR CLIENTE">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnAlquilarVehiculo" layoutX="442.0" layoutY="140.0" mnemonicParsing="false" onAction="#alquilarVehiculo" prefHeight="29.0" prefWidth="170.0" text="ALQUILAR VEHÍCULO">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnRegistrarVehiculo" layoutX="38.0" layoutY="140.0" mnemonicParsing="false" onAction="#registrarVehiculo" prefHeight="29.0" prefWidth="170.0" text="REGISTRAR VEHÍCULO">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

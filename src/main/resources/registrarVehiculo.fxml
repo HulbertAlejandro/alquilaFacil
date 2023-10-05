@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="441.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroVehiculoControler">
+    <children>
+        <Separator layoutY="100.0" prefHeight="11.0" prefWidth="693.0" />
+        <Label layoutX="38.0" layoutY="131.0" text="Referencia:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtReferencia" layoutX="148.0" layoutY="127.0" prefHeight="25.0" prefWidth="141.0" />
+        <Label layoutX="360.0" layoutY="131.0" text="Placa:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtPrecioDia" layoutX="513.0" layoutY="228.0" prefHeight="25.0" prefWidth="141.0" />
+        <Label layoutX="38.0" layoutY="182.0" text="Marca:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtKm" layoutX="148.0" layoutY="228.0" prefHeight="25.0" prefWidth="141.0" />
+        <TextField fx:id="txtNumPuertas" layoutX="513.0" layoutY="275.0" prefHeight="25.0" prefWidth="141.0" />
+        <Label layoutX="357.0" layoutY="182.0" text="Modelo:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="232.0" text="KM:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="360.0" layoutY="232.0" text="Precio:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="36.0" layoutY="279.0" text="Trasmisión:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="357.0" layoutY="279.0" text="Número de sillas:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModelo" layoutX="513.0" layoutY="178.0" prefHeight="25.0" prefWidth="141.0" />
+        <TextField fx:id="txtPlaca" layoutX="513.0" layoutY="127.0" prefHeight="25.0" prefWidth="141.0" />
+        <Button fx:id="btnAtras" layoutX="239.0" layoutY="384.0" mnemonicParsing="false" onAction="#atras" prefHeight="29.0" prefWidth="86.0" text="ATRÁS">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnGuardar" layoutX="337.0" layoutY="384.0" mnemonicParsing="false" onAction="#registrarVehiculo" text="GUARDAR">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="124.0" fitWidth="340.0" layoutX="172.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@imagenes/registrarVehiculo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="36.0" layoutY="328.0" text="URL:">
+            <font>
+                <Font name="Franklin Gothic Medium" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtUrl" layoutX="144.0" layoutY="325.0" prefHeight="25.0" prefWidth="512.0" />
+        <ComboBox fx:id="opcionesCaja" layoutX="148.0" layoutY="275.0" prefHeight="25.0" prefWidth="141.0" />
+        <TextField fx:id="txtMarca" layoutX="148.0" layoutY="178.0" prefHeight="25.0" prefWidth="141.0" />
+    </children>
+</AnchorPane>

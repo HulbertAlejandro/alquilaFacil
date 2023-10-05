@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="304.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.LoginControlador">
+    <ImageView fitHeight="252.0" fitWidth="256.0" layoutX="101.0" layoutY="-49.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@imagenes/logo.png" />
+        </image>
+    </ImageView>
+    <TextField id="textUser" fx:id="textUser" layoutX="149.0" layoutY="155.0" promptText="Ingrese su usuario" />
+    <Button id="btnSignIn" fx:id="btnEntrar" layoutX="152.0" layoutY="251.0" mnemonicParsing="false" onAction="#entrar" prefHeight="29.0" prefWidth="149.0" text="Entrar">
+        <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+        </font>
+    </Button>
+    <PasswordField fx:id="textContrasena" layoutX="150.0" layoutY="203.0" promptText="Ingrese su contraseña" />
+    <Separator layoutX="-6.0" layoutY="138.0" prefHeight="5.0" prefWidth="457.0" />
+</AnchorPane>

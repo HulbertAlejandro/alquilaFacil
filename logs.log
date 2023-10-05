@@ -1,0 +1,214 @@
+sep. 30, 2023 5:51:47 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+sep. 30, 2023 5:52:16 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: x
+sep. 30, 2023 5:58:51 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+sep. 30, 2023 5:59:22 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: x
+sep. 30, 2023 5:59:36 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: e
+sep. 30, 2023 6:18:29 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 2:29:42 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 2:30:18 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 2:48:15 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 2:49:36 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 3:04:22 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 3:25:26 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 3:26:43 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 3:32:47 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 6:33:36 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 6:34:57 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+WARNING: La foto es obligatoria para el registro
+oct. 02, 2023 6:36:15 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+SEVERE: La placa x ya esta registrada
+oct. 02, 2023 7:16:44 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:19:25 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:21:36 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:41:02 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:44:43 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:47:45 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:48:58 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:50:43 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 7:53:07 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 8:05:56 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 8:08:19 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 8:12:20 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 9:48:25 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 9:51:19 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 10:23:03 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 02, 2023 11:05:31 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 8:21:46 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 8:23:13 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+oct. 03, 2023 8:24:09 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+INFO: Se ha registrado un vehiculo nuevo con la placa: UPY-20D
+oct. 03, 2023 9:21:08 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 10:35:25 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 10:36:25 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+oct. 03, 2023 10:45:37 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 10:46:17 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La cédula es obligatoria para el registro
+oct. 03, 2023 10:46:44 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+SEVERE: La cédula 1104804234 no esta registrada
+oct. 03, 2023 10:47:43 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+oct. 03, 2023 10:48:03 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La fecha de incio es obligatoria para realizar el alquiler
+oct. 03, 2023 10:59:20 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 11:00:41 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+oct. 03, 2023 11:01:08 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20Dha sido exitoso
+oct. 03, 2023 1:04:41 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 1:05:40 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+oct. 03, 2023 1:06:05 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 1:06:50 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 1:08:32 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 1:09:06 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 1:09:30 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 1:09:57 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 1:10:33 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+WARNING: La cédula es obligatoria para el registro
+oct. 03, 2023 1:21:11 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 1:21:45 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 1:22:10 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: JAL-19M ha sido exitoso
+oct. 03, 2023 1:22:37 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: El vehiculo no se encuentra disponible para esa fecha
+oct. 03, 2023 1:56:18 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 1:59:23 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 1:59:42 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 1:59:58 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: El vehiculo no se encuentra disponible para la fecha
+oct. 03, 2023 2:17:58 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 2:18:33 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 2:18:55 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 2:19:19 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: El vehiculo no se encuentra disponible para la fecha
+oct. 03, 2023 2:40:02 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 2:40:48 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 2:41:09 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 2:41:33 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: El vehiculo no se encuentra disponible para la fecha
+oct. 03, 2023 2:41:53 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 2:42:15 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 2:44:12 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 2:45:04 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 2:45:22 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La fecha de inicio no puede ser después de la fecha final
+oct. 03, 2023 2:45:45 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La fecha de inicio no puede ser después de la fecha final
+oct. 03, 2023 2:46:01 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La fecha de inicio no puede ser después de la fecha final
+oct. 03, 2023 2:46:10 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La fecha de inicio no puede ser después de la fecha final
+oct. 03, 2023 2:46:23 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+WARNING: La fecha de incio es obligatoria para realizar el alquiler
+oct. 03, 2023 3:50:02 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 3:50:35 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 3:51:21 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 6:32:43 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 6:36:17 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 6:36:40 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct. 03, 2023 6:36:54 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: UPY-20D ha sido exitoso
+oct. 03, 2023 6:37:09 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: JAL-19M ha sido exitoso
+oct. 03, 2023 6:37:26 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: JAL-19M ha sido exitoso
+oct. 03, 2023 7:08:05 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 03, 2023 7:08:23 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+WARNING: La cédula es obligatoria para el registro
+oct. 03, 2023 7:09:28 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 12345
+oct 03, 2023 9:03:54 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:07:26 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:09:03 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:10:07 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:10:54 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:16:20 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:22:07 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:29:27 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 9:32:22 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 03, 2023 11:33:21 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 04, 2023 12:04:51 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 04, 2023 4:51:05 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct 04, 2023 4:52:01 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: XXX
+oct 04, 2023 4:52:54 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
