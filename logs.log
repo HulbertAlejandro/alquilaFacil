@@ -240,3 +240,53 @@ oct 07, 2023 12:50:22 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <
 INFO: Se crea una nueva instancia de AlquilaFacil
 Oct 07, 2023 12:58:33 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
 INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 3:51:55 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 3:54:55 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 3:56:50 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:06:27 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:07:16 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:15:42 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:16:04 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: XXX
+Oct 07, 2023 4:22:53 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:23:43 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:24:11 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:25:04 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:27:33 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+SEVERE: La cédula 1104804234 ya esta registrada
+Oct 07, 2023 4:27:52 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804235
+Oct 07, 2023 4:27:55 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+SEVERE: La cédula 1104804235 ya esta registrada
+Oct 07, 2023 4:28:20 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:29:17 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:30:16 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:31:21 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:33:40 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:34:42 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:35:12 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:36:23 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+Oct 07, 2023 4:37:15 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1091884402
+Oct 07, 2023 4:42:32 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 07, 2023 4:43:43 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1092455284

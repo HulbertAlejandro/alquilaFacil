@@ -111,15 +111,21 @@ public class AlquilaFacil {
         Cliente cliente = Cliente.builder()
                 .cedula(cedula)
                 .nombreCompleto(nombreCompleto)
-                .email(email)
-                .direccion(direccion)
-                .ciudad(ciudad)
                 .telefono(telefono)
+                .email(email)
+                .ciudad(ciudad)
+                .direccion(direccion)
                 .build();
 
         clientes.add(cliente);
 
         LOGGER.log(Level.INFO, "Se ha registrado un nuevo cliente con la cédula: " + cedula);
+
+        try {
+            ArchivoUtils.escribirArchivoBufferedWriter("src/main/resources/persistencia/clientes.txt", clientes, true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         return cliente;
     }
