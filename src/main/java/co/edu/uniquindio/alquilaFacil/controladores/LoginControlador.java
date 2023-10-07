@@ -1,6 +1,7 @@
 package co.edu.uniquindio.alquilaFacil.controladores;
 
 import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
+import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -11,7 +12,7 @@ import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class LoginControlador {
+public class LoginControlador implements Initializable {
 
     @FXML
     private TextField textUser;
@@ -23,6 +24,14 @@ public class LoginControlador {
     private Button btnEntrar;
 
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
+    private final Propiedades propiedades = Propiedades.getInstance();
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle){
+        textUser.setPromptText(propiedades.getResourceBundle().getString("TextoUsuario"));
+        textContrasena.setPromptText(propiedades.getResourceBundle().getString("TextoContrasena"));
+        btnEntrar.setText(propiedades.getResourceBundle().getString("TextoEntrar"));
+    }
     public void entrar(ActionEvent event) {
 
         Object evt = event.getSource();

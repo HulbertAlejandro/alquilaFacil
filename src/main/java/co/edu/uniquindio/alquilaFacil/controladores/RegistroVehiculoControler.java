@@ -18,7 +18,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class RegistroVehiculoControler {
+public class RegistroVehiculoControler implements Initializable{
 
     @FXML
     private TextField txtPlaca;
@@ -50,12 +50,13 @@ public class RegistroVehiculoControler {
     @FXML
     private Button btnAtras;
 
-    @FXML
-    private Button btnGuardar;
-
-
     //Uso del Singleton
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        opcionesCaja.setItems( FXCollections.observableArrayList( List.of("Automática", "Manual") ) );
+    }
 
     public void registrarVehiculo(ActionEvent actionEvent){
 
@@ -103,9 +104,5 @@ public class RegistroVehiculoControler {
         if(evt.equals(btnAtras)){
             alquilaFacil.loadStage("/inicio.fxml", event);
         }
-    }
-
-    private void agregarTextoAlComboBox(){
-        String textoIngresado = txtReferencia.getText();
     }
 }

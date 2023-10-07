@@ -3,6 +3,7 @@ package co.edu.uniquindio.alquilaFacil.modelo;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoNegativoException;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoVacioException;
 import co.edu.uniquindio.alquilaFacil.excepciones.InformacionRepetidaException;
+import co.edu.uniquindio.alquilaFacil.utils.ArchivoUtils;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -12,6 +13,8 @@ import javafx.stage.Stage;
 import lombok.Getter;
 
 import javax.swing.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -201,12 +204,6 @@ public class AlquilaFacil {
             throw new Exception("La fecha de inicio no puede ser después de la fecha final");
         }
 
-        if(validarDisponibilidad(placaVehiculo, fechaInicio)){
-            throw new Exception("El vehiculo no se encuentra disponible para esa fecha");
-        }
-
-
-
         //Diferencia de días
         long dias = fechaInicio.until(fechaFin, ChronoUnit.DAYS);
 
@@ -310,21 +307,4 @@ public class AlquilaFacil {
         return null;
     }
 
-    public boolean validarDisponibilidad(String placa, LocalDate fecha){
-        boolean estado = false;
-        for (Alquiler alquilere : alquileres) {
-            if(placa.equals(alquilere.getVehiculo().getPlaca())){
-                if (fecha.isAfter(alquilere.getFechaInicio()) && fecha.isBefore(alquilere.getFechaFin())) {
-                    estado = true;
-                } else {
-                    if ((fecha.equals(alquilere.getFechaInicio()) || fecha.equals(alquilere.getFechaFin()))) {
-                        estado = true;
-                    } else {
-                        return estado;
-                    }
-                }
-            }
-        }
-        return estado;
-    }
 }
