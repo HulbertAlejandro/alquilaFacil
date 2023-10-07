@@ -5,49 +5,49 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="441.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroVehiculoControler">
+<AnchorPane prefHeight="441.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroVehiculoControler">
     <children>
         <Separator layoutY="100.0" prefHeight="11.0" prefWidth="693.0" />
-        <Label layoutX="38.0" layoutY="131.0" text="Referencia:">
+        <Label fx:id="labelReferencia" layoutX="38.0" layoutY="131.0" text="Referencia:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
         <TextField fx:id="txtReferencia" layoutX="148.0" layoutY="127.0" prefHeight="25.0" prefWidth="141.0" />
-        <Label layoutX="360.0" layoutY="131.0" text="Placa:">
+        <Label fx:id="placa" layoutX="360.0" layoutY="131.0" text="Placa:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
         <TextField fx:id="txtPrecioDia" layoutX="513.0" layoutY="228.0" prefHeight="25.0" prefWidth="141.0" />
-        <Label layoutX="38.0" layoutY="182.0" text="Marca:">
+        <Label fx:id="marca" layoutX="38.0" layoutY="182.0" text="Marca:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
         <TextField fx:id="txtKm" layoutX="148.0" layoutY="228.0" prefHeight="25.0" prefWidth="141.0" />
         <TextField fx:id="txtNumPuertas" layoutX="513.0" layoutY="275.0" prefHeight="25.0" prefWidth="141.0" />
-        <Label layoutX="357.0" layoutY="182.0" text="Modelo:">
+        <Label fx:id="modelo" layoutX="357.0" layoutY="182.0" text="Modelo:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="38.0" layoutY="232.0" text="KM:">
+        <Label fx:id="km" layoutX="38.0" layoutY="232.0" text="KM:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="360.0" layoutY="232.0" text="Precio:">
+        <Label fx:id="precio" layoutX="360.0" layoutY="232.0" text="Precio:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="36.0" layoutY="279.0" text="Trasmisión:">
+        <Label fx:id="labelTrasmision" layoutX="36.0" layoutY="279.0" text="Trasmisión:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
-        <Label layoutX="357.0" layoutY="279.0" text="Número de sillas:">
+        <Label fx:id="numeroSillas" layoutX="357.0" layoutY="279.0" text="Número de sillas:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
@@ -69,7 +69,7 @@
                 <Image url="@imagenes/registrarVehiculo.png" />
             </image>
         </ImageView>
-        <Label layoutX="36.0" layoutY="328.0" text="URL:">
+        <Label fx:id="labelUrl" layoutX="36.0" layoutY="328.0" text="URL:">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>

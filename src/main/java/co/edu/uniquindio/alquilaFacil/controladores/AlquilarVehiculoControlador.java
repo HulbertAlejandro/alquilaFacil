@@ -3,18 +3,22 @@ package co.edu.uniquindio.alquilaFacil.controladores;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoVacioException;
 import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
 import co.edu.uniquindio.alquilaFacil.modelo.Alquiler;
+import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
 import co.edu.uniquindio.alquilaFacil.modelo.Vehiculo;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.ResourceBundle;
 
-public class AlquilarVehiculoControlador{
+public class AlquilarVehiculoControlador implements Initializable {
 
     @FXML
     private TextField txtCedula;
@@ -61,13 +65,34 @@ public class AlquilarVehiculoControlador{
     @FXML
     private Button btnAtras, btnBuscar, btnGuardar;
 
+    @FXML
+    private Label fechaAlquiler1, fechaRegreso1, cedula, referencia, placa, marca, modelo, precio, km, numeroSillas, automatico, imagen1;
+
 
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
 
     private ArrayList<Vehiculo> vehiculos = alquilaFacil.getVehiculos();
 
     ObservableList<String> referencias = FXCollections.observableArrayList();
-
+    private final Propiedades propiedades = Propiedades.getInstance();
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle){
+        fechaAlquiler1.setText(propiedades.getResourceBundle().getString("TextoFechaAlquiler"));
+        fechaRegreso1.setText(propiedades.getResourceBundle().getString("TextoFechaRegreso"));
+        cedula.setText(propiedades.getResourceBundle().getString("TextoCedula"));
+        referencia.setText(propiedades.getResourceBundle().getString("TextoReferencia"));
+        placa.setText(propiedades.getResourceBundle().getString("TextoPlaca"));
+        marca.setText(propiedades.getResourceBundle().getString("TextoMarca"));
+        modelo.setText(propiedades.getResourceBundle().getString("TextoModelo"));
+        precio.setText(propiedades.getResourceBundle().getString("TextoPrecio"));
+        km.setText(propiedades.getResourceBundle().getString("TextoKm"));
+        numeroSillas.setText(propiedades.getResourceBundle().getString("TextoNumeroSillas"));
+        automatico.setText(propiedades.getResourceBundle().getString("TextoAutomatico"));
+        imagen1.setText(propiedades.getResourceBundle().getString("TextoImagen"));
+        btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));
+        btnGuardar.setText(propiedades.getResourceBundle().getString("TextoGuardar"));
+        btnBuscar.setText(propiedades.getResourceBundle().getString("TextoBuscar"));
+    }
 
 
     public void atras(ActionEvent event){
