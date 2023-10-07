@@ -52,7 +52,7 @@ public class RegistroVehiculoControler implements Initializable{
     private Button btnGuardar;
 
     @FXML
-    private Label labelReferencia, placa, marca, modelo, km, precio, labelTransmision, numeroSillas, labelUrl;
+    private Label labelReferencia, placa, marca, modelo, km, precio, numeroSillas, labelUrl;
 
     //Uso del Singleton
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
@@ -69,7 +69,6 @@ public class RegistroVehiculoControler implements Initializable{
         precio.setText(propiedades.getResourceBundle().getString("TextoPrecio"));
         km.setText(propiedades.getResourceBundle().getString("TextoKm"));
         numeroSillas.setText(propiedades.getResourceBundle().getString("TextoNumeroSillas"));
-        labelTransmision.setText(propiedades.getResourceBundle().getString("TextoTransmision"));
         labelUrl.setText(propiedades.getResourceBundle().getString("TextoUrl"));
         btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));
         btnGuardar.setText(propiedades.getResourceBundle().getString("TextoGuardar"));

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="telefono1" prefHeight="346.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroClienteControler">
+<AnchorPane prefHeight="346.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroClienteControler">
     <children>
         <Label id="labelId" fx:id="cedula" layoutX="22.0" layoutY="134.0" text="Cédula:">
             <font>

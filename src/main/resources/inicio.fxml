@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="216.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.InicioControlador">
+<AnchorPane prefHeight="267.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.InicioControlador">
     <children>
         <ImageView fitHeight="118.0" fitWidth="323.0" layoutX="147.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -28,5 +28,20 @@
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Button>
+      <Button fx:id="btnInformesClientes" layoutX="38.0" layoutY="192.0" mnemonicParsing="false" onAction="#informeCliente" prefHeight="25.0" prefWidth="170.0" text="INFORMES CLIENTES">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInformesVehiculos" layoutX="243.0" layoutY="194.0" mnemonicParsing="false" onAction="#informeVehiculo" prefHeight="25.0" prefWidth="170.0" text="INFORMES VEHÍCULOS">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInformesAlquileres" layoutX="442.0" layoutY="192.0" mnemonicParsing="false" onAction="#informeAlquiler" prefHeight="25.0" prefWidth="170.0" text="INFORMES ALQUILERES">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
