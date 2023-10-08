@@ -43,7 +43,7 @@ public class RegistroClienteControler implements Initializable {
     private Button btnGuardar;
 
     @FXML
-    private Label cedula, nombre, correo, telefono1, ciudad, direccion;
+    private Label cedula, nombre, correo, ciudad, direccion;
 
     //Uso del Singleton
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
@@ -53,7 +53,7 @@ public class RegistroClienteControler implements Initializable {
         cedula.setText(propiedades.getResourceBundle().getString("TextoCedula"));
         nombre.setText(propiedades.getResourceBundle().getString("TextoNombre"));
         correo.setText(propiedades.getResourceBundle().getString("TextoCorreo"));
-        telefono1.setText(propiedades.getResourceBundle().getString("TextoTelefono"));
+
         ciudad.setText(propiedades.getResourceBundle().getString("TextoCiudad"));
         direccion.setText(propiedades.getResourceBundle().getString("TextoDireccion"));
         btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));

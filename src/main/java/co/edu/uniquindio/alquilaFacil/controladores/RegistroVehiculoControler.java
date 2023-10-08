@@ -70,7 +70,6 @@ public class RegistroVehiculoControler implements Initializable{
         precio.setText(propiedades.getResourceBundle().getString("TextoPrecio"));
         km.setText(propiedades.getResourceBundle().getString("TextoKm"));
         numeroSillas.setText(propiedades.getResourceBundle().getString("TextoNumeroSillas"));
-
         labelUrl.setText(propiedades.getResourceBundle().getString("TextoUrl"));
         btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));
         btnGuardar.setText(propiedades.getResourceBundle().getString("TextoGuardar"));
