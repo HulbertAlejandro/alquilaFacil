@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="441.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroVehiculoControler">
+<AnchorPane prefHeight="441.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.RegistroVehiculoControler">
     <children>
         <Separator layoutY="100.0" prefHeight="11.0" prefWidth="693.0" />
         <Label fx:id="labelReferencia" layoutX="38.0" layoutY="131.0" text="Referencia:">
@@ -42,7 +42,7 @@
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
         </Label>
-        <Label fx:id="labelTrasmision" layoutX="36.0" layoutY="279.0" text="Trasmisión:">
+        <Label fx:id="labelTrasmision" layoutX="36.0" layoutY="279.0" text="Trasmisión">
             <font>
                 <Font name="Franklin Gothic Medium" size="15.0" />
             </font>
