@@ -22,6 +22,15 @@ public class InicioControlador implements Initializable {
     @FXML
     private Button btnRegistrarVehiculo;
 
+    @FXML
+    private Button btnInformesVehiculos;
+
+    @FXML
+    private Button btnInformesClientes;
+
+    @FXML
+    private Button btnInformesAlquileres;
+
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
 
     private final Propiedades propiedades = Propiedades.getInstance();
@@ -56,6 +65,33 @@ public class InicioControlador implements Initializable {
 
         if(evt.equals(btnAlquilarVehiculo)){
             alquilaFacil.loadStage("/alquilarVehiculo.fxml", event);
+        }
+    }
+
+    public void informeCliente(ActionEvent event){
+
+        Object evt = event.getSource();
+
+        if(evt.equals(btnInformesClientes)){
+            alquilaFacil.loadStage("/mostrarClientes.fxml", event);
+        }
+    }
+
+    public void informeVehiculo(ActionEvent event){
+
+        Object evt = event.getSource();
+
+        if(evt.equals(btnInformesVehiculos)){
+            alquilaFacil.loadStage("/mostrarVehiculos.fxml", event);
+        }
+    }
+
+    public void informeAlquiler(ActionEvent event){
+
+        Object evt = event.getSource();
+
+        if(evt.equals(btnInformesAlquileres)){
+            alquilaFacil.loadStage("/mostrarAlquileres.fxml", event);
         }
     }
 }
