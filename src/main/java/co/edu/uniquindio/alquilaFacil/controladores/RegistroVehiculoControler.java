@@ -5,14 +5,12 @@ import co.edu.uniquindio.alquilaFacil.excepciones.AtributoVacioException;
 import co.edu.uniquindio.alquilaFacil.excepciones.InformacionRepetidaException;
 import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
 
+import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.List;
@@ -50,12 +48,31 @@ public class RegistroVehiculoControler implements Initializable{
     @FXML
     private Button btnAtras;
 
+    @FXML
+    private Button btnGuardar;
+
+    @FXML
+    private Label labelReferencia, placa, marca, modelo, km, precio, labelTransmision, numeroSillas, labelUrl;
+
     //Uso del Singleton
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
+    private final Propiedades propiedades = Propiedades.getInstance();
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         opcionesCaja.setItems( FXCollections.observableArrayList( List.of("Automática", "Manual") ) );
+        labelReferencia.setText(propiedades.getResourceBundle().getString("TextoReferencia"));
+        placa.setText(propiedades.getResourceBundle().getString("TextoPlaca"));
+        marca.setText(propiedades.getResourceBundle().getString("TextoMarca"));
+        modelo.setText(propiedades.getResourceBundle().getString("TextoModelo"));
+        precio.setText(propiedades.getResourceBundle().getString("TextoPrecio"));
+        km.setText(propiedades.getResourceBundle().getString("TextoKm"));
+        numeroSillas.setText(propiedades.getResourceBundle().getString("TextoNumeroSillas"));
+        labelTransmision.setText(propiedades.getResourceBundle().getString("TextoTransmision"));
+        labelUrl.setText(propiedades.getResourceBundle().getString("TextoUrl"));
+        btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));
+        btnGuardar.setText(propiedades.getResourceBundle().getString("TextoGuardar"));
     }
 
     public void registrarVehiculo(ActionEvent actionEvent){
