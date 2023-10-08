@@ -1,5 +1,7 @@
 package co.edu.uniquindio.alquilaFacil.utils;
 
+import co.edu.uniquindio.alquilaFacil.modelo.Cliente;
+
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.BufferedReader;
@@ -84,13 +86,13 @@ public class ArchivoUtils {
      * @param concat True si se concatena los nuevos datos sin sobreescibir todo el archivo
      * @throws IOException
      */
-    public static void escribirArchivoBufferedWriter(String ruta, ArrayList<String> lista, boolean concat) throws IOException{
+    public static void escribirArchivoBufferedWriter(String ruta, ArrayList<Cliente> lista, boolean concat) throws IOException{
 
         FileWriter fw = new FileWriter(ruta, concat);
         BufferedWriter bw = new BufferedWriter(fw);
 
-        for (String string : lista) {
-            bw.write(string);
+        for (Cliente cliente : lista) {
+            bw.write(String.valueOf(cliente));
             bw.newLine();
         }
 
