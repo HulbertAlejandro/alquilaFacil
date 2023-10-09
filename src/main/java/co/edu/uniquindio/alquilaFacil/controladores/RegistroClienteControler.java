@@ -5,6 +5,8 @@ import co.edu.uniquindio.alquilaFacil.excepciones.InformacionRepetidaException;
 import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
 import co.edu.uniquindio.alquilaFacil.modelo.Cliente;
 import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaEvent;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -16,7 +18,7 @@ import javafx.scene.control.TextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class RegistroClienteControler implements Initializable {
+public class RegistroClienteControler implements Initializable, CambioIdiomaListener {
 
     @FXML
     private TextField txtCedula;
@@ -43,17 +45,34 @@ public class RegistroClienteControler implements Initializable {
     private Button btnGuardar;
 
     @FXML
-    private Label cedula, nombre, correo, ciudad, direccion;
+    private Label cedula, nombre, correo, ciudad, direccion, telefono;
 
     //Uso del Singleton
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
     private final Propiedades propiedades = Propiedades.getInstance();
 
     public void initialize(URL url, ResourceBundle resourceBundle){
+        // Inicialización normal del controlador
+
+        // Registra este controlador como un escuchador de cambios de idioma
+        Propiedades.getInstance().addCambioIdiomaListener(this);
+
+        // Actualiza las cadenas de texto según el idioma actual
+        actualizarTextos();
+    }
+
+    @Override
+    public void onCambioIdioma(CambioIdiomaEvent evento) {
+        // Se llama cuando se cambia el idioma
+
+        // Actualiza las cadenas de texto según el nuevo idioma
+        actualizarTextos();
+    }
+    private void actualizarTextos(){
         cedula.setText(propiedades.getResourceBundle().getString("TextoCedula"));
         nombre.setText(propiedades.getResourceBundle().getString("TextoNombre"));
         correo.setText(propiedades.getResourceBundle().getString("TextoCorreo"));
-
+        telefono.setText(propiedades.getResourceBundle().getString("TextoTelefono"));
         ciudad.setText(propiedades.getResourceBundle().getString("TextoCiudad"));
         direccion.setText(propiedades.getResourceBundle().getString("TextoDireccion"));
         btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));

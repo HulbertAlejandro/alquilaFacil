@@ -5,6 +5,8 @@ import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
 import co.edu.uniquindio.alquilaFacil.modelo.Alquiler;
 import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
 import co.edu.uniquindio.alquilaFacil.modelo.Vehiculo;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaEvent;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaListener;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,7 +20,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class AlquilarVehiculoControlador implements Initializable {
+public class AlquilarVehiculoControlador implements Initializable, CambioIdiomaListener {
 
     @FXML
     private TextField txtCedula;
@@ -77,6 +79,23 @@ public class AlquilarVehiculoControlador implements Initializable {
     private final Propiedades propiedades = Propiedades.getInstance();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
+
+        // Registra este controlador como un escuchador de cambios de idioma
+        Propiedades.getInstance().addCambioIdiomaListener(this);
+
+        // Actualiza las cadenas de texto según el idioma actual
+        actualizarTextos();
+    }
+
+    @Override
+    public void onCambioIdioma(CambioIdiomaEvent evento) {
+        // Se llama cuando se cambia el idioma
+
+        // Actualiza las cadenas de texto según el nuevo idioma
+        actualizarTextos();
+    }
+
+    private void actualizarTextos(){
         fechaAlquiler1.setText(propiedades.getResourceBundle().getString("TextoFechaAlquiler"));
         fechaRegreso1.setText(propiedades.getResourceBundle().getString("TextoFechaRegreso"));
         cedula.setText(propiedades.getResourceBundle().getString("TextoCedula"));

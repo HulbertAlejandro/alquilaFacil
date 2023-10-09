@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarClientesControlador">
+<AnchorPane prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarClientesControlador">
    <children>
       <ImageView fitHeight="131.0" fitWidth="325.0" layoutX="135.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -19,8 +19,8 @@
       </Button>
       <TableView layoutX="187.0" layoutY="137.0" prefHeight="205.0" prefWidth="221.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="NOMBRE" />
-          <TableColumn prefWidth="75.0" text="CEDULA" />
+          <TableColumn fx:id="tableNombre" prefWidth="75.0" text="NOMBRE" />
+          <TableColumn fx:id="tableCedula" prefWidth="75.0" text="CEDULA" />
         </columns>
       </TableView>
    </children>

@@ -2,6 +2,8 @@ package co.edu.uniquindio.alquilaFacil.controladores;
 
 import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
 import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaEvent;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,7 +12,7 @@ import javafx.scene.control.Button;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class InicioControlador implements Initializable {
+public class InicioControlador implements Initializable, CambioIdiomaListener {
 
     @FXML
     private Button btnRegistrarCliente;
@@ -35,9 +37,31 @@ public class InicioControlador implements Initializable {
     private final Propiedades propiedades = Propiedades.getInstance();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
+
+        // Inicialización normal del controlador
+
+        // Registra este controlador como un escuchador de cambios de idioma
+        Propiedades.getInstance().addCambioIdiomaListener(this);
+
+        // Actualiza las cadenas de texto según el idioma actual
+        actualizarTextos();
+    }
+
+    @Override
+    public void onCambioIdioma(CambioIdiomaEvent evento) {
+        // Se llama cuando se cambia el idioma
+
+        // Actualiza las cadenas de texto según el nuevo idioma
+        actualizarTextos();
+    }
+
+    private void actualizarTextos() {
         btnRegistrarCliente.setText(propiedades.getResourceBundle().getString("TextoRegistrarCliente"));
         btnAlquilarVehiculo.setText(propiedades.getResourceBundle().getString("TextoAlquilarVehiculo"));
         btnRegistrarVehiculo.setText(propiedades.getResourceBundle().getString("TextoRegistrarVehiculo"));
+        btnInformesClientes.setText(propiedades.getResourceBundle().getString("TextoInformesClientes"));
+        btnInformesVehiculos.setText(propiedades.getResourceBundle().getString("TextoInformesVehiculos"));
+        btnInformesAlquileres.setText(propiedades.getResourceBundle().getString("TextoInformesAlquileres"));
     }
 
     public void registrarVehiculo(ActionEvent event){

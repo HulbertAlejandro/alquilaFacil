@@ -6,6 +6,8 @@ import co.edu.uniquindio.alquilaFacil.excepciones.InformacionRepetidaException;
 import co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil;
 
 import co.edu.uniquindio.alquilaFacil.modelo.Propiedades;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaEvent;
+import co.edu.uniquindio.alquilaFacil.utils.CambioIdiomaListener;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,7 +18,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class RegistroVehiculoControler implements Initializable{
+public class RegistroVehiculoControler implements Initializable, CambioIdiomaListener {
 
     @FXML
     private TextField txtPlaca;
@@ -52,7 +54,7 @@ public class RegistroVehiculoControler implements Initializable{
     private Button btnGuardar;
 
     @FXML
-    private Label labelReferencia, placa, marca, modelo, km, precio, numeroSillas, labelUrl;
+    private Label labelReferencia, placa, marca, modelo, km, precio, numeroSillas, labelUrl, labelTrasmision;
 
     //Uso del Singleton
     private final AlquilaFacil alquilaFacil = AlquilaFacil.getInstance();
@@ -63,6 +65,22 @@ public class RegistroVehiculoControler implements Initializable{
     public void initialize(URL url, ResourceBundle resourceBundle) {
         opcionesCaja.setItems( FXCollections.observableArrayList( List.of("Automática", "Manual") ) );
 
+        // Registra este controlador como un escuchador de cambios de idioma
+        Propiedades.getInstance().addCambioIdiomaListener(this);
+
+        // Actualiza las cadenas de texto según el idioma actual
+        actualizarTextos();
+    }
+
+    @Override
+    public void onCambioIdioma(CambioIdiomaEvent evento) {
+        // Se llama cuando se cambia el idioma
+
+        // Actualiza las cadenas de texto según el nuevo idioma
+        actualizarTextos();
+    }
+
+    private void actualizarTextos(){
         labelReferencia.setText(propiedades.getResourceBundle().getString("TextoReferencia"));
         placa.setText(propiedades.getResourceBundle().getString("TextoPlaca"));
         marca.setText(propiedades.getResourceBundle().getString("TextoMarca"));
@@ -70,6 +88,7 @@ public class RegistroVehiculoControler implements Initializable{
         precio.setText(propiedades.getResourceBundle().getString("TextoPrecio"));
         km.setText(propiedades.getResourceBundle().getString("TextoKm"));
         numeroSillas.setText(propiedades.getResourceBundle().getString("TextoNumeroSillas"));
+        labelTrasmision.setText(propiedades.getResourceBundle().getString("TextoTransmision"));
         labelUrl.setText(propiedades.getResourceBundle().getString("TextoUrl"));
         btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));
         btnGuardar.setText(propiedades.getResourceBundle().getString("TextoGuardar"));

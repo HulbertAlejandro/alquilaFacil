@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="409.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarVehiculosControlador">
+<AnchorPane prefHeight="409.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarVehiculosControlador">
    <children>
       <ImageView fitHeight="114.0" fitWidth="279.0" layoutX="161.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -15,8 +15,8 @@
       <Separator layoutX="-5.0" layoutY="120.0" prefHeight="4.0" prefWidth="600.0" />
       <TableView layoutX="201.0" layoutY="145.0" prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="REFERENCIA" />
-          <TableColumn prefWidth="75.0" text="PLACA" />
+          <TableColumn fx:id="tableReferencia" prefWidth="75.0" text="REFERENCIA" />
+          <TableColumn fx:id="tablePlaca" prefWidth="75.0" text="PLACA" />
         </columns>
       </TableView>
       <Button fx:id="btnAtras" layoutX="275.0" layoutY="361.0" mnemonicParsing="false" onAction="#atras" text="ATRÁS">
