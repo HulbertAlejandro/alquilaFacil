@@ -3,7 +3,6 @@ package co.edu.uniquindio.alquilaFacil.modelo;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoNegativoException;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoVacioException;
 import co.edu.uniquindio.alquilaFacil.excepciones.InformacionRepetidaException;
-import co.edu.uniquindio.alquilaFacil.utils.ArchivoUtils;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -13,29 +12,25 @@ import javafx.stage.Stage;
 import lombok.Getter;
 
 import javax.swing.*;
-import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.Objects;
+import java.util.*;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+@Getter
 public class AlquilaFacil {
 
-    @Getter
     private ArrayList<Vehiculo> vehiculos;
 
-    @Getter
     private ArrayList<Cliente> clientes;
 
-    @Getter
     private ArrayList<Alquiler> alquileres;
 
     private static final Logger LOGGER = Logger.getLogger(AlquilaFacil.class.getName());
@@ -59,6 +54,7 @@ public class AlquilaFacil {
         LOGGER.log( Level.INFO, "Se crea una nueva instancia de AlquilaFacil" );
         this.vehiculos = new ArrayList<>();
         this.clientes = new ArrayList<>();
+        leerCliente();
         this.alquileres = new ArrayList<>();
     }
 
@@ -122,7 +118,14 @@ public class AlquilaFacil {
         LOGGER.log(Level.INFO, "Se ha registrado un nuevo cliente con la cédula: " + cedula);
 
         try {
-            ArchivoUtils.escribirArchivoBufferedWriter("src/main/resources/persistencia/clientes.txt", clientes, true);
+            FileWriter fw = new FileWriter("src/main/resources/persistencia/clientes.txt", true);
+            Formatter ft = new Formatter(fw);
+            ft.format(cliente.getCedula() + ";" + cliente.getNombreCompleto() + ";" +
+                    cliente.getTelefono() + ";" + cliente.getEmail() + ";" +
+                    cliente.getCiudad() + ";" + cliente.getDireccion() + "%n");
+
+            ft.close();
+            fw.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -178,7 +181,7 @@ public class AlquilaFacil {
 
     }
 
-    public Alquiler registrarAlquiler(String cedulaCliente,String placaVehiculo,LocalDate fechaInicio,LocalDate fechaFin) throws Exception, AtributoVacioException{
+    public Alquiler registrarAlquiler(String cedulaCliente,String placaVehiculo,LocalDate fechaInicio,LocalDate fechaFin) throws Exception, AtributoVacioException, InformacionRepetidaException{
 
         //Validar atributos
         if(cedulaCliente == null || cedulaCliente.isBlank()){
@@ -311,6 +314,25 @@ public class AlquilaFacil {
         vehiculos.add(vehiculo1);
 
         return null;
+    }
+
+    public void leerCliente(){
+        try(Scanner sc = new Scanner(new File("src/main/resources/persistencia/clientes.txt"))){
+            while(sc.hasNextLine()){
+                String linea = sc.nextLine();
+                String[] valores = linea.split(";");
+                this.clientes.add(Cliente.builder()
+                        .cedula(valores[0])
+                        .nombreCompleto(valores[1])
+                        .telefono(valores[5])
+                        .email(valores[2])
+                        .ciudad(valores[4])
+                        .direccion(valores[3])
+                        .build());
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
 }

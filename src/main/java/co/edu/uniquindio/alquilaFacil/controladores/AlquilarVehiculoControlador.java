@@ -80,6 +80,11 @@ public class AlquilarVehiculoControlador implements Initializable, CambioIdiomaL
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
 
+        for (Vehiculo vehiculo : vehiculos) {
+            referencias.add(vehiculo.getReferencia());
+        }
+        cbxVehiculos.setItems(referencias);
+
         // Registra este controlador como un escuchador de cambios de idioma
         Propiedades.getInstance().addCambioIdiomaListener(this);
 

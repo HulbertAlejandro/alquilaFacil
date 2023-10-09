@@ -5,22 +5,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="419.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarClientesControlador">
+<AnchorPane prefHeight="420.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarClientesControlador">
    <children>
-      <ImageView fitHeight="131.0" fitWidth="325.0" layoutX="135.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="131.0" fitWidth="325.0" layoutX="183.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagenes/mostrarClientes.png" />
          </image></ImageView>
-      <Separator layoutX="-1.0" layoutY="113.0" prefHeight="0.0" prefWidth="596.0" />
-      <Button fx:id="btnAtras" layoutX="275.0" layoutY="366.0" mnemonicParsing="false" onAction="#atras" text="ATRÁS">
+      <Separator layoutX="-1.0" layoutY="115.0" prefHeight="1.0" prefWidth="659.0" />
+      <Button fx:id="btnAtras" layoutX="329.0" layoutY="364.0" mnemonicParsing="false" onAction="#atras" text="ATRÁS">
          <font>
             <Font name="Franklin Gothic Medium" size="15.0" />
          </font>
       </Button>
-      <TableView layoutX="187.0" layoutY="137.0" prefHeight="205.0" prefWidth="221.0">
+      <TableView fx:id="tableView" layoutX="18.0" layoutY="137.0" prefHeight="205.0" prefWidth="685.0">
         <columns>
-          <TableColumn fx:id="tableNombre" prefWidth="75.0" text="NOMBRE" />
-          <TableColumn fx:id="tableCedula" prefWidth="75.0" text="CEDULA" />
+          <TableColumn fx:id="tableCedula" prefWidth="109.0" text="CEDULA" />
+          <TableColumn fx:id="tableNombre" prefWidth="117.0" text="NOMBRE" />
+            <TableColumn fx:id="tableTelefono" prefWidth="87.0" text="TELEFONO" />
+            <TableColumn fx:id="tableCorreo" prefWidth="151.0" text="CORREO" />
+            <TableColumn fx:id="tableCiudad" prefWidth="110.0" text="CIUDAD" />
+            <TableColumn fx:id="tableDireccion" prefWidth="110.0" text="DIRECCIÓN" />
         </columns>
       </TableView>
    </children>

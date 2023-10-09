@@ -53,7 +53,6 @@ public class LoginControlador implements Initializable {
         actualizarTextos();
     }
 
-
     private void actualizarTextos(){
         btnCambiarIdioma.setText(propiedades.getResourceBundle().getString("TextoCambiarIdioma"));
         textUser.setPromptText(propiedades.getResourceBundle().getString("TextoUsuario"));
