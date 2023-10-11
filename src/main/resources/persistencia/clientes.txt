@@ -1,3 +1,4 @@
 1104804234;Alejandro Arango;hulbert5789@gmail.com;Villa de las Ameericas Mz 1 Casa1;Armenia;3007590341
 1091884402;Julian Andres Ladino;andresjul043011@gmail.com;La Fachada Mz 1 Casa 2;Armenia;3114420307
 29227599;Jacqueline Fajardo;jackofajardo123@gmail.com;Juan Pablo Calle 50 #39 - 18;Palmira;3154263477
+1114541210;Sebastian Manrique;sebastianmh04@gmail.com;Villa de las Americas Mz 1 Casa 1;Armenia;3225957914

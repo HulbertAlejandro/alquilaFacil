@@ -521,3 +521,7 @@ oct. 11, 2023 11:11:20 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil 
 INFO: El alquier del vehiculo: AAA ha sido exitoso
 oct. 11, 2023 11:12:09 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
 INFO: El alquier del vehiculo: AAB ha sido exitoso
+oct. 11, 2023 12:15:20 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1114541210
+oct. 11, 2023 12:15:40 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
