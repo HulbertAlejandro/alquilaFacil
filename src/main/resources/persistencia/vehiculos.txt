@@ -1,0 +1,2 @@
+AAA;Spark Gt;Chevrolet;2024;C:/Users/hulbe/IdeaProjects/alquilaFacil/src/main/resources/imagenes/SparkGT.png;0;50000.0;true;5
+AAB;Picanto;Kia;2024;C:/Users/hulbe/IdeaProjects/alquilaFacil/src/main/resources/imagenes/Picanto.png;0;50000.0;true;5

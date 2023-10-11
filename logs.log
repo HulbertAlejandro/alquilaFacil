@@ -455,3 +455,69 @@ Oct 08, 2023 9:49:03 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init
 INFO: Se crea una nueva instancia de AlquilaFacil
 Oct 08, 2023 9:50:03 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
 INFO: Se crea una nueva instancia de AlquilaFacil
+Oct 09, 2023 12:09:13 PM co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 09, 2023 2:00:52 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+INFO: Se crea una nueva instancia de AlquilaFacil
+oct. 09, 2023 3:06:04 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1111
+oct. 09, 2023 3:06:59 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+INFO: Se ha registrado un vehiculo nuevo con la placa: AAA
+oct. 09, 2023 3:33:11 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1104804234
+oct. 09, 2023 3:34:29 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 1091884402
+oct. 09, 2023 3:48:11 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 123
+oct. 09, 2023 4:00:18 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+INFO: Se ha registrado un vehiculo nuevo con la placa: AAA
+oct. 09, 2023 4:20:50 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: x
+oct. 09, 2023 4:51:21 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+INFO: Se ha registrado un vehiculo nuevo con la placa: AAA
+oct. 09, 2023 4:53:58 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+SEVERE: La cédula 1104804234 ya esta registrada
+oct. 09, 2023 5:19:19 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarVehiculo
+INFO: Se ha registrado un vehiculo nuevo con la placa: AAB
+oct. 10, 2023 8:42:35 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+SEVERE: null
+oct. 10, 2023 8:43:10 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 9:24:24 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 9:28:34 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 9:31:23 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 9:33:06 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAB ha sido exitoso
+oct. 10, 2023 9:34:50 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAB ha sido exitoso
+oct. 10, 2023 9:35:02 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAB ha sido exitoso
+oct. 10, 2023 9:36:11 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 9:37:14 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 9:45:06 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+SEVERE: null
+oct. 10, 2023 9:45:31 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 10:14:41 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarCliente
+INFO: Se ha registrado un nuevo cliente con la cédula: 29227599
+oct. 10, 2023 10:30:04 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 11:11:04 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 10, 2023 2:28:41 P. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAB ha sido exitoso
+oct. 11, 2023 10:21:59 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+SEVERE: null
+oct. 11, 2023 10:22:48 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 11, 2023 11:09:58 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil <init>
+SEVERE: null
+oct. 11, 2023 11:11:20 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAA ha sido exitoso
+oct. 11, 2023 11:12:09 A. M. co.edu.uniquindio.alquilaFacil.modelo.AlquilaFacil registrarAlquiler
+INFO: El alquier del vehiculo: AAB ha sido exitoso

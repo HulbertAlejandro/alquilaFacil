@@ -14,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -129,6 +130,8 @@ public class RegistroVehiculoControler implements Initializable, CambioIdiomaLis
             alert.setHeaderText(null);
             alert.show();
         } catch (AtributoVacioException | InformacionRepetidaException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

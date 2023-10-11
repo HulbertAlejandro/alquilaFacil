@@ -7,21 +7,25 @@
 
 <AnchorPane prefHeight="421.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.alquilaFacil.controladores.MostrarAlquileresControlador">
    <children>
-      <ImageView fitHeight="107.0" fitWidth="293.0" layoutX="161.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="107.0" fitWidth="293.0" layoutX="162.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@imagenes/mostrarAlquileres.png" />
          </image>
       </ImageView>
       <Separator layoutX="-3.0" layoutY="117.0" prefHeight="8.0" prefWidth="606.0" />
-      <Button fx:id="btnAtras" layoutX="270.0" layoutY="367.0" mnemonicParsing="false" onAction="#atras" text="ATRÁS">
+      <Button fx:id="btnAtras" layoutX="270.0" layoutY="365.0" mnemonicParsing="false" onAction="#atras" text="ATRÁS">
          <font>
             <Font name="Franklin Gothic Medium" size="15.0" />
          </font>
       </Button>
-      <TableView layoutX="200.0" layoutY="144.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="144.0" prefHeight="200.0" prefWidth="590.0">
         <columns>
-          <TableColumn fx:id="tableCedula" prefWidth="75.0" text="CEDÚLA" />
-          <TableColumn fx:id="tablePlaca" prefWidth="75.0" text="PLACA" />
+          <TableColumn fx:id="tableCedula" prefWidth="73.0" text="CEDÚLA" />
+          <TableColumn fx:id="tablePlaca" prefWidth="90.0" text="PLACA" />
+            <TableColumn fx:id="tableRegistro" prefWidth="123.0" text="FECHA DE REGISTRO" />
+            <TableColumn fx:id="tableInicio" prefWidth="106.0" text="FECHA DE INICIO" />
+            <TableColumn fx:id="tableFin" prefWidth="99.0" text="FECHA DE FIN" />
+            <TableColumn fx:id="tableValor" prefWidth="98.0" text="VALOR TOTAL" />
         </columns>
       </TableView>
    </children>

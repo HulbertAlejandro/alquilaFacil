@@ -73,12 +73,12 @@ public class MostrarClientesControlador implements Initializable, CambioIdiomaLi
 
     private void actualizarTextos() {
         btnAtras.setText(propiedades.getResourceBundle().getString("TextoAtras"));
-        tableCedula.setText(propiedades.getResourceBundle().getString("TextoCedula"));
-        tableNombre.setText(propiedades.getResourceBundle().getString("TextoNombre"));
-        tableTelefono.setText(propiedades.getResourceBundle().getString("TextoTelefono"));
-        tableCorreo.setText(propiedades.getResourceBundle().getString("TextoCorreo"));
-        tableCiudad.setText(propiedades.getResourceBundle().getString("TextoCiudad"));
-        tableDireccion.setText(propiedades.getResourceBundle().getString("TextoDireccion"));
+        tableCedula.setText(propiedades.getResourceBundle().getString("TextoCEDULA"));
+        tableNombre.setText(propiedades.getResourceBundle().getString("TextoNOMBRE"));
+        tableTelefono.setText(propiedades.getResourceBundle().getString("TextoTELEFONO"));
+        tableCorreo.setText(propiedades.getResourceBundle().getString("TextoCORREO"));
+        tableCiudad.setText(propiedades.getResourceBundle().getString("TextoCIUDAD"));
+        tableDireccion.setText(propiedades.getResourceBundle().getString("TextoDIRECCION"));
 
     }
     public void atras(ActionEvent event){

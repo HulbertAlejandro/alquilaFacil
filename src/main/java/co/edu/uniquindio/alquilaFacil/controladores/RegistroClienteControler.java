@@ -15,6 +15,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -95,13 +96,12 @@ public class RegistroClienteControler implements Initializable, CambioIdiomaList
             alert.setContentText("Se ha registrado correctamente el cliente "+cliente.getNombreCompleto());
             alert.show();
 
-        } catch (AtributoVacioException | InformacionRepetidaException e) {
+        } catch (AtributoVacioException | InformacionRepetidaException | IOException e) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());
             alert.setHeaderText(null);
             alert.show();
-
         }
 
     }

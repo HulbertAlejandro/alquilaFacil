@@ -3,6 +3,7 @@ package co.edu.uniquindio.alquilaFacil.modelo;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoNegativoException;
 import co.edu.uniquindio.alquilaFacil.excepciones.AtributoVacioException;
 import co.edu.uniquindio.alquilaFacil.excepciones.InformacionRepetidaException;
+import co.edu.uniquindio.alquilaFacil.utils.ArchivoUtils;
 import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -15,6 +16,7 @@ import javax.swing.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
@@ -24,8 +26,15 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+
 @Getter
-public class AlquilaFacil {
+public class AlquilaFacil implements Serializable {
+
+    private static final String RUTA_CLIENTES = "src/main/resources/persistencia/clientes.txt";
+
+    private static final String RUTA_VEHICULOS = "src/main/resources/persistencia/vehiculos.txt";
+
+    private static final String RUTA_ALQUILERES = "src/main/resources/persistencia/alquileres.ser";
 
     private ArrayList<Vehiculo> vehiculos;
 
@@ -43,19 +52,25 @@ public class AlquilaFacil {
      */
     private AlquilaFacil(){
 
+        LOGGER.log( Level.INFO, "Se crea una nueva instancia de AlquilaFacil" );
+        this.vehiculos = new ArrayList<>();
+        this.clientes = new ArrayList<>();
+        this.alquileres = new ArrayList<>();
+
         try {
             FileHandler fh = new FileHandler("logs.log", true);
             fh.setFormatter( new SimpleFormatter());
             LOGGER.addHandler(fh);
+            leerCliente();
+            leerVehiculo();
+            leerAlquiler();
+
         }catch (IOException e){
             LOGGER.log( Level.SEVERE, e.getMessage() );
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
 
-        LOGGER.log( Level.INFO, "Se crea una nueva instancia de AlquilaFacil" );
-        this.vehiculos = new ArrayList<>();
-        this.clientes = new ArrayList<>();
-        leerCliente();
-        this.alquileres = new ArrayList<>();
     }
 
     /**
@@ -70,7 +85,7 @@ public class AlquilaFacil {
         return alquilaFacil;
     }
 
-    public Cliente registrarCliente(String cedula, String nombreCompleto, String telefono, String email,String ciudad, String direccion) throws AtributoVacioException, InformacionRepetidaException{
+    public Cliente registrarCliente(String cedula, String nombreCompleto, String telefono, String email,String ciudad, String direccion) throws AtributoVacioException, InformacionRepetidaException, IOException {
 
         if(cedula == null || cedula.isBlank()){
             LOGGER.log( Level.WARNING, "La cédula es obligatoria para el registro" );
@@ -117,23 +132,19 @@ public class AlquilaFacil {
 
         LOGGER.log(Level.INFO, "Se ha registrado un nuevo cliente con la cédula: " + cedula);
 
-        try {
-            FileWriter fw = new FileWriter("src/main/resources/persistencia/clientes.txt", true);
-            Formatter ft = new Formatter(fw);
-            ft.format(cliente.getCedula() + ";" + cliente.getNombreCompleto() + ";" +
-                    cliente.getTelefono() + ";" + cliente.getEmail() + ";" +
-                    cliente.getCiudad() + ";" + cliente.getDireccion() + "%n");
+        String clienteTxt = cliente.getCedula() + ";" + cliente.getNombreCompleto() + ";" +
+                cliente.getTelefono() + ";" + cliente.getEmail() + ";" +
+                cliente.getCiudad() + ";" + cliente.getDireccion();
 
-            ft.close();
-            fw.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        ArrayList<String> lineas = new ArrayList<>();
+        lineas.add(clienteTxt);
+
+        ArchivoUtils.escribirArchivoBufferedWriter(RUTA_CLIENTES, lineas, true);
 
         return cliente;
     }
 
-    public Vehiculo registrarVehiculo(String placa,String referencia,String marca,int modelo,String foto,int kilometraje,float precioDia,boolean esAutomatico,int numSillas) throws AtributoNegativoException, InformacionRepetidaException, AtributoVacioException{
+    public Vehiculo registrarVehiculo(String placa,String referencia,String marca,int modelo,String foto,int kilometraje,float precioDia,boolean esAutomatico,int numSillas) throws AtributoNegativoException, InformacionRepetidaException, AtributoVacioException, IOException{
 
         //Validar atributos
 
@@ -177,11 +188,18 @@ public class AlquilaFacil {
 
         LOGGER.log(Level.INFO, "Se ha registrado un vehiculo nuevo con la placa: " + placa);
 
+        String vehiculoTxt = vehiculo.getPlaca() + ";" + vehiculo.getReferencia() + ";" + vehiculo.getMarca() + ";" + vehiculo.getModelo() + ";" + vehiculo.getFoto() + ";" + vehiculo.getKilometraje() + ";" + vehiculo.getPrecioDia() + ";" + Boolean.toString(vehiculo.isEsAutomatico()) + ";" + vehiculo.getNumSillas();
+
+        ArrayList<String> lineas = new ArrayList<>();
+        lineas.add(vehiculoTxt);
+
+        ArchivoUtils.escribirArchivoBufferedWriter(RUTA_VEHICULOS, lineas, true);
+
         return vehiculo;
 
     }
 
-    public Alquiler registrarAlquiler(String cedulaCliente,String placaVehiculo,LocalDate fechaInicio,LocalDate fechaFin) throws Exception, AtributoVacioException, InformacionRepetidaException{
+    public Alquiler registrarAlquiler(String cedulaCliente,String placaVehiculo,LocalDate fechaInicio,LocalDate fechaFin) throws Exception, AtributoVacioException, InformacionRepetidaException, IOException{
 
         //Validar atributos
         if(cedulaCliente == null || cedulaCliente.isBlank()){
@@ -224,13 +242,14 @@ public class AlquilaFacil {
                 .fechaInicio(fechaInicio)
                 .fechaFin(fechaFin)
                 .fechaRegistro(LocalDateTime.now())
+                .valorTotal(dias * obtenerVehiculo(placaVehiculo).getPrecioDia())
                 .build();
 
         alquileres.add(alquiler);
 
         LOGGER.log(Level.INFO, "El alquier del vehiculo: " + placaVehiculo + " ha sido exitoso");
 
-        JOptionPane.showMessageDialog(null, "Factura" + "\nEl costo de alquier del vehiculo es de: " + (dias * obtenerVehiculo(placaVehiculo).getPrecioDia()) + " por: " + dias + " dias");
+        ArchivoUtils.serializarObjeto(RUTA_ALQUILERES, alquiler, true);
 
         return alquiler;
     }
@@ -284,54 +303,48 @@ public class AlquilaFacil {
         return null;
     }
 
-    public Vehiculo crearVehiculo(){
-        Vehiculo vehiculo = Vehiculo.builder()
-                .placa("UPY-20D")
-                .referencia("Spark GT")
-                .marca("Chevrolet")
-                .modelo(2024)
-                .foto("C:/Users/hulbe/IdeaProjects/alquilaFacil/src/main/resources/imagenes/SparkGT.png")
-                .kilometraje(0)
-                .precioDia(50000)
-                .esAutomatico(false)
-                .numSillas(5)
-                .build();
+    public void leerCliente()throws IOException {
+        ArrayList<String> clientes = ArchivoUtils.leerArchivoScanner(RUTA_CLIENTES);
 
-        vehiculos.add(vehiculo);
-
-        Vehiculo vehiculo1 = Vehiculo.builder()
-                .placa("JAL-19M")
-                .referencia("Picanto")
-                .marca("Kia")
-                .modelo(2023)
-                .foto("C:/Users/hulbe/IdeaProjects/alquilaFacil/src/main/resources/imagenes/Picanto.png")
-                .kilometraje(0)
-                .precioDia(60000)
-                .esAutomatico(true)
-                .numSillas(5)
-                .build();
-
-        vehiculos.add(vehiculo1);
-
-        return null;
+        for (String s : clientes) {
+            String linea = s;
+            String[] valores = linea.split(";");
+            this.clientes.add(Cliente.builder()
+                    .cedula(valores[0])
+                    .nombreCompleto(valores[1])
+                    .telefono(valores[5])
+                    .email(valores[2])
+                    .ciudad(valores[4])
+                    .direccion(valores[3])
+                    .build());
+        }
     }
 
-    public void leerCliente(){
-        try(Scanner sc = new Scanner(new File("src/main/resources/persistencia/clientes.txt"))){
-            while(sc.hasNextLine()){
-                String linea = sc.nextLine();
-                String[] valores = linea.split(";");
-                this.clientes.add(Cliente.builder()
-                        .cedula(valores[0])
-                        .nombreCompleto(valores[1])
-                        .telefono(valores[5])
-                        .email(valores[2])
-                        .ciudad(valores[4])
-                        .direccion(valores[3])
-                        .build());
-            }
-        }catch (IOException e){
-            e.printStackTrace();
+    public void leerVehiculo() throws IOException{
+        ArrayList<String> vehiculos = ArchivoUtils.leerArchivoScanner(RUTA_VEHICULOS);
+
+        for(String s : vehiculos){
+            String linea = s;
+            String[] valores = linea.split(";");
+            this.vehiculos.add(Vehiculo.builder()
+                    .placa(valores[0])
+                    .referencia(valores[1])
+                    .marca(valores[2])
+                    .modelo(Integer.parseInt(valores[3]))
+                    .foto(valores[4])
+                    .kilometraje(Integer.parseInt(valores[5]))
+                    .precioDia(Float.parseFloat(valores[6]))
+                    .esAutomatico(Boolean.parseBoolean(valores[7]))
+                    .numSillas(Integer.parseInt(valores[8]))
+                    .build());
+        }
+    }
+
+    public void leerAlquiler() throws IOException, ClassNotFoundException {
+        Object objeto = ArchivoUtils.deserializarObjeto(RUTA_ALQUILERES);
+        if (objeto instanceof Alquiler) {
+            Alquiler alquiler = (Alquiler) objeto; // Convertirlo a Alquiler
+            this.alquileres.add(alquiler);
         }
     }
 

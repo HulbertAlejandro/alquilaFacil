@@ -16,11 +16,13 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.NotSerializableException;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class AlquilarVehiculoControlador implements Initializable, CambioIdiomaListener {
+public class AlquilarVehiculoControlador implements Initializable, CambioIdiomaListener, Serializable {
 
     @FXML
     private TextField txtCedula;
@@ -161,7 +163,7 @@ public class AlquilarVehiculoControlador implements Initializable, CambioIdiomaL
             alert.setContentText("Se ha alquilado el vehiculo exitosamente");
             alert.show();
 
-        } catch (AtributoVacioException e) {
+        } catch (AtributoVacioException | NotSerializableException e) {
 
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(e.getMessage());

@@ -2,6 +2,7 @@ package co.edu.uniquindio.alquilaFacil.modelo;
 
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -10,7 +11,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Alquiler {
+public class Alquiler implements Serializable {
 
     private Cliente cliente;
     private Vehiculo vehiculo;
@@ -18,4 +19,5 @@ public class Alquiler {
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private float valorTotal;
+
 }

@@ -67,7 +67,6 @@ public class LoginControlador implements Initializable {
         if(evt.equals(btnEntrar)){
             if(textUser.getText().equals("Alejandro Arango") && textContrasena.getText().equals("1104804234")){
                 alquilaFacil.loadStage("/inicio.fxml", event);
-                alquilaFacil.crearVehiculo();
             } else{
                 if(textUser.getText().isEmpty() && textContrasena.getText().isEmpty()){
                     JOptionPane.showMessageDialog(null, "Error, completar todos los campos","ADVERTENCIA", JOptionPane.WARNING_MESSAGE);
